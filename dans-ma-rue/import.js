@@ -101,7 +101,7 @@ fs.readdir(DATA_PATH, function (err, files) {
                 "objectId"            : parseInt(data["OBJECTID"], 10),
                 "provider"            : data["INTERVENANT"],
                 "neighborhoodCouncil" : data["CONSEIL DE QUARTIER"],
-                "location"            : data["geo_point_2d"].split(", ").map(s => parseFloat(s))
+                "location"            : data["geo_point_2d"].split(", ").map(s => parseFloat(s)).reverse()
               }
               documents.push(document);
               if  (documents.length >= BULK_SIZE) {
