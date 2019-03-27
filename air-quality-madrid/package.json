@@ -1,0 +1,12 @@
+{
+  "name": "air-quality-madrid",
+  "version": "1.0.0",
+  "description": "Air Quality Madrid",
+  "author": "Sébastien PRUNIER - @sebprunier",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "csv-parser": "^2.2.0",
+    "elasticsearch": "^15.4.1",
+    "single-line-log": "^1.1.2"
+  }
+}
